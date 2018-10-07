@@ -14,13 +14,13 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
- * MockTest
+ * MockMvcTest
  *
  * @author orjrs
  * @date 2018-10-06 20:15
  */
 @WebAppConfiguration // 1
-public class MockTest extends TestApplicationTests {
+public class MockMvcTest extends TestApplicationTests {
     @Autowired
     private WebApplicationContext webApplicationContext;
 
