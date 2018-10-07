@@ -19,5 +19,5 @@ public class SpringBootTestDemo {
     // 1. 测试类会自动加载启动类，默认module下的启动类
     // 2. 可以指定具体的启动类，且可以多个(3)
     // 4. SpringBoot 2.0+版本后，默认生产启动测试类，
-    //    可以直接extends TestApplicationTests，这样就不用家@RunWith和@SpringBo0tTest注解
+    //    其他测试类可以直接extends TestApplicationTests，这样就不用家@RunWith和@SpringBo0tTest注解
 }
