@@ -18,10 +18,10 @@ import org.springframework.web.context.WebApplicationContext;
  * MockMvcTest
  *
  * @author orjrs
- * @date 2018-10-06 20:15
+ * @date 2018-10-21 16:12
  */
 @WebAppConfiguration // 1
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc // 开启MockMvc自动注解
 public class AutoMockMvcTest extends TestApplicationTests {
     // @Autowired
     // private WebApplicationContext webApplicationContext;
@@ -29,7 +29,7 @@ public class AutoMockMvcTest extends TestApplicationTests {
     @Autowired
     private MockMvc mockMvc;
 
-    /*@Before
+    /*@Before // @Test注解的方法运行前执行，MockMvcBuilder构造MockMvc实例
     public void setUp() {
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }*/

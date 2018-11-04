@@ -26,7 +26,7 @@ public class MockMvcTest extends TestApplicationTests {
 
     private MockMvc mockMvc;
 
-    @Before
+    @Before // @Test注解的方法运行前执行，MockMvcBuilder构造MockMvc实例
     public void setUp() {
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
